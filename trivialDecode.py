@@ -35,11 +35,14 @@ ciphertext = ""
 
 key= "T0pS3cre7key"
 secret="Bot kmws mikferuigmzf rmfrxrwqe abs perudsf! Nvm kda ut ab8bv_w4ue0_ab8v_DDU"
-for i in secret:
+for i in range(len(secret)):
   rotate_amount = keychars.index(key[i%len(key)])
-  if secret[i] in keychars:
+  if secret[i] in alphaL:
     enc_char=ord(secret[i])+ 96 -rotate_amount
-  else
+  elif secret[i] in alphaU:
+    enc_char=ord(secret[i])+ 96 -rotate_amount
+  else:
     enc_char=ord(secret[i])
+  print enc_char
   ciphertext=ciphertext+chr(enc_char)
-print ciphertext
+print "hi"
