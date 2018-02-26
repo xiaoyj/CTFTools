@@ -10,6 +10,7 @@ def encrypt(some):
 		while len(test)<3:
 			test = '0'+test
 		cryptedstr=cryptedstr+test
+		$cryptedstr .= $temp. "";
 	print cryptedstr	
 	return base64.b64encode(cryptedstr)
 print encrypt("Admin")
